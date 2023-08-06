@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>UX/UI Homework 20</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    </head>
+    <!--Navigation Nav Component-->
+    <body>
+        <ul class="nav justify-content-center sticky-top">
+            <li class="nav-item">
+              <a class="nav-link active" href="#project-overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#problems">Problem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iterations">Iterations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prototype">Prototype</a>
+            </li>
+          </ul>
+          <!--Introduction Jumbotron Component-->
+          <div class="jumbotron introduction-jumbotron">
+            <h1 class="display-4">EventKey</h1>
+            <p class="lead">An app that helps users to find, purchase, and store tickets for events that they love.</p>
+            <p class="lead">
+              <h1><span class="badge badge-light">Tools Used
+                <img src=images\logos_figma.png>
+              </span>
+            </h1>
+            </p>
+          </div>
+          <div class="overview">
+            <h1 id="project-overview">Project Overview</h1>
+            <p>EventKey is a ticketing app aimed to help people who often miss out on events and value transparency in pricing to learn about and purchase tickets for upcoming events.</p>
+            <h1>The Problem</h1>
+            <p>There are several ticketing services and virtual event newsletters that are currently on the market. Currently <strong>none of these options are incredibly efficient at notifying users about upcoming events in time for them to learn about and register for these events, nor do they give clear and open pricing</strong>, which is causing users to miss out on events that they would be interested in attending, and <strong>if they are able to find an event they would like to attend, they feel they are overpaying for tickets.</strong> We believe that if we design an app that is able to more efficiently notify users of upcoming events in their area  and allow them to register for said events with clear and open pricing, our users will miss out on fewer events that they are interested in attending and feel more confident that their tickets are priced fairly.
+            </p>
+            <h1>Project Goals</h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="cardContainer col-lg-4">
+                  <div class="card">
+                    <img src="/images/calendar_logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">To create an application that <strong>helps users to discover upcoming events</strong> specific to their interests.</h5>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="cardContainer col-lg-4">
+                  <div class="card">
+                    <img src="/images/eye_logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Give users transparency</strong> into the pricing of tickets.</h5>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="cardContainer col-lg-4">
+                  <div class="card">
+                    <img src="/images/ticket_logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Allow users to <strong>easily find and store their tickets</strong> in-app.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!--Research Section Card Components-->
+        <h1 id="research">Research</h1>
+        <p>To better understand our user, I started conducting  user interviews with friends and colleagues  who often attended and purchased tickets for local events.</p>
+        <p><strong>During these research phase, I also tried to understand:</strong></p>
+        <ul class="research-obj">
+          <li>Why participants attend events, who do they bring with them, when they attend events, and what kind of events they attend.</li>
+          <li>Participant's thoughts and previous experiences with event registration/ticketing services.</li>
+          <li>Learn what tools participants use when searching for events to attend, and how the feel about those tools.</li>
+        </ul>
+        <h1>User Persona</h1>
+        <img src="images\user-persona.png">
+        <h1 id="problems">Problems Faced by Users</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="cardContainer col-lg-4">
+                <div class="card">
+                  <img src="images\no-sight.png" class="card-img-research" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><strong>A lack of transparency</strong> in ticketing prices on competitor sites, most of the time they do not see the “true price” of tickets until they reach check-out.</h5>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="cardContainer col-lg-4">
+                <div class="card">
+                  <img src="images\no-noise.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Only hearing about events <strong>after they have already happened.</strong></h5>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="cardContainer col-lg-4">
+                <div class="card">
+                  <img src="images\no-info.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Find that many ticketing sites <strong>do not give nearly enough information about the actual event</strong> such as location, what the event is about, or activities at the event.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="possol-section">
+            <h1 id="solutions">Possible Solutions</h1>
+            <p>Based on the all the information collected through research and findings, we determined that an application would require following functionality to address our users painpoints.</p>
+
+            <div class="container possible-solutions-grid">
+              <div class="row">
+                <div class="col-md-4 offset-md-1 posol-item">Provide users with recommendations for upcoming events tailored to their interests.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-7 posol-item">Have users select interest when signing up and give them the ability to edit/change their interests at any time.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-1 posol-item">Provide the “real” price for a ticket before reaching checkout.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-7 posol-item">Send notifications to users about upcoming events.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-1 posol-item">Allow users to purchase and manage their tickets in-app.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-7 posol-item">Send reminders for events that the user has purchased tickets for.</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-1 posol-item">Provide information that users desire in-app so no additional research about events are needed.</div>
+              </div>
+            </div>
+            </div>
+
+            <div class="paper-wireframes-section">
+              <h1 id="iterations">Paper Wireframes</h1>
+              <p>Based on the defined problems and solutions, we began sketching our wireframes so that we might determine the ultimate direction we would like to take the design in before we began building out the high-fi design and prototyping.</p>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="cardContainer col-lg-4">
+                    <div class="card">
+                      <img src="images\paper-wireframe-one.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Event Recommendations</h5>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="cardContainer col-lg-4">
+                    <div class="card">
+                      <img src="images\paper-wireframe-two.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">View and Favorite Artists</h5>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="cardContainer col-lg-4">
+                    <div class="card">
+                      <img src="images\paper-wireframe-three.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Store Tickets in-app</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="hi-fi-designs-section">
+              <h1  id="prototype">Hi-Fi Designs</h1>
+              <p>After several rounds of iterations and user testing, we ultimately arrived at our hi-fi design and prototype for the app.</p>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="cardContainer col-lg-4 offset-md-1">
+                    <div class="card">
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1600" height="900" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FiinHz7Y8tX0mk3R8OghvU1%2FEventKey-Wireframes%3Ftype%3Ddesign%26node-id%3D35-9397%26t%3DX18N33VmhtKq8vGo-1%26scaling%3Dscale-down%26page-id%3D35%253A4%26starting-point-node-id%3D35%253A6533%26mode%3Ddesign" allowfullscreen></iframe>
+                      <div class="card-body">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!--Key Takeaways Jumbotron Component-->
+            <div class="jumbotron key-takeaways-jumbotron">
+              <h1 class="display-4">Key Takeaways</h1>
+              <p class="lead">In working with this team we were able to discover problems that our users faced in their event searching and ticketing process and design a solution that addresses those problems.</p>
+
+                <p class="lead">We did this by researching our target users and competitors, designing wireframes and clickable prototypes, and testing and iterating on those prototypes to deliver an enjoyable user experience.</p>
+                
+                <p class="lead">Given more time we would want to implement more features and functionality and continually test and iterate upon our design.</p>
+            </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
